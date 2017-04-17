@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    buildToolsVersion "24.0.3"
 
     defaultConfig {
         applicationId "devdreamers.dev.codingnight1"
@@ -27,6 +27,6 @@ dependencies {
     compile 'info.android15.nucleus:nucleus:4.0.0'
     compile 'com.squareup.retrofit2:retrofit:2.2.0'
     compile 'com.jakewharton:butterknife:8.5.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     compile 'com.google.code.gson:gson:2.8.0'
 }
