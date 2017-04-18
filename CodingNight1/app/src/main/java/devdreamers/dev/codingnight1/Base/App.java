@@ -2,8 +2,7 @@ package devdreamers.dev.codingnight1.Base;
 
 import android.app.Application;
 
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+import devdreamers.dev.codingnight1.Network.RestClient;
 
 /**
  *  App class to run for the very first time the instance of the services
@@ -11,19 +10,14 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class App extends Application {
 
-    private static Retrofit serverAPI;
+    private static RestClient restClient;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        serverAPI = new Retrofit.Builder()
-                .baseUrl(ServerAPI.BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
     }
 
-    public static Retrofit getServerAPI() {
-        return serverAPI;
+    public static RestClient getRestClient() {
+        return restClient;
     }
 }

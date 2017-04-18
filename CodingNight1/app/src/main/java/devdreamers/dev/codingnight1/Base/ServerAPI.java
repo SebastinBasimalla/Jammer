@@ -11,32 +11,15 @@ import rx.Observable;
  */
 public interface ServerAPI {
 
-    public static final String BASE_URL = "https://itunes.apple.com/";
-
     public static class Item{
         @SerializedName("song")
         public String song;
 
-        public String getSong() {
-            return song;
-        }
-
-        public void setSong(String song) {
-            this.song = song;
-        }
     }
 
     public static class Response{
         @SerializedName("jsonResponse")
         public String response;
-
-        public String getResponse() {
-            return response;
-        }
-
-        public void setResponse(String response) {
-            this.response = response;
-        }
     }
 
     /**

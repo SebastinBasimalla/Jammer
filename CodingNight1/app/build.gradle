@@ -3,7 +3,7 @@ apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.3"
+    buildToolsVersion "24.0.1"
 
     defaultConfig {
         applicationId "devdreamers.dev.codingnight1"
@@ -31,6 +31,9 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.5.1'
     //annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     compile 'com.google.code.gson:gson:2.8.0'
-    compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.0.0-RC1'
+    //compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.0.0-RC1'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.2.0'
 
 }
